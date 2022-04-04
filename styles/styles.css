@@ -1,99 +1,10 @@
-:root {
-  /*colors */
-  --primary-1: #5fb4a2;
-  --primary-2: #203a4c;
-  --primary-3: #33323d;
-  --bg-col: #f2f2f2;
-  --txt-col: #eaeaeb;
-  --error-col: #f43030;
-}
-
-*,
-*::before *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  max-width: 144rem;
-  margin: 0 auto;
-  font-family: "Public Sans", sans-serif;
-  background-color: var(--bg-col);
-}
-
-h1,
-h2 {
-  font-family: "Ibarra Real Nova";
-  font-weight: 700;
-  color: var(--primary-3);
-}
-
-h1 {
-  font-size: 5rem;
-  line-height: 5rem;
-  letter-spacing: -0.45px;
-  margin-top: 0;
-  margin-bottom: 5rem;
-}
-
-h2 {
-  font-size: 4rem;
-  line-height: 4.2rem;
-  letter-spacing: -0.35px;
-  margin: 0;
-}
-
-.btn {
-  font-family: "Public Sans";
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 1.7rem 3.2rem;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.btn-fill:link,
-.btn-fill:visited {
-  background-color: #203a4c;
-  display: inline-block;
-  color: #fff;
-}
-
-.btn-fill:hover,
-.btn-fill:active {
-  background-color: var(--primary-1);
-}
-
-.btn-outline:link,
-.btn-outline:visited {
-  border: 1px solid var(--primary-3);
-}
-
-.btn-outline:hover,
-.btn-outline:active {
-  background-color: var(--primary-3);
-  color: #fff;
-}
-
-.container {
-  max-width: 111rem;
-  margin: 0 auto;
-}
-
 /* ****************/
 /* HEADER SECTION */
 /* ****************/
 
 .heading {
   margin-top: 6.4rem;
+  margin-bottom: 5.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,7 +39,6 @@ h2 {
 /* **************/
 
 .section-hero {
-  margin-top: 5.4rem;
   position: relative;
   margin-bottom: 15rem;
 }
@@ -150,21 +60,20 @@ h2 {
 /* ABOUT ME SECTION */
 /* ******************/
 
-.section-aboutme {
+.content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12.5rem;
   margin-bottom: 15rem;
 }
 
-.aboutme-img {
+.content-img {
   width: 100%;
 }
 
-.aboutme-content {
+.content-txt {
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-  margin-right: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,27 +81,23 @@ h2 {
   gap: 2.4rem;
 }
 
-.aboutme-txt {
-  font-family: "Public Sans";
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  margin: 0;
-  color: rgba(51, 50, 61, 0.8);
-}
-
 .section-contact {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 15rem;
+  gap: 3.2rem;
+  justify-content: space-between;
 }
 
-.footer {
+/* ****************/
+/* FOOTER SECTION */
+/* ****************/
+
+.section-footer {
   background-color: var(--primary-3);
 }
 
-.section-footer {
+.footer {
   display: flex;
   align-items: center;
   padding: 2rem 0 2rem 0;
@@ -234,4 +139,13 @@ h2 {
 .footer-socials {
   display: flex;
   gap: 1.5rem;
+}
+
+/* ***********/
+/* PORTFOLIO */
+/* ***********/
+
+.portfolio-hero {
+  border: 4px solid red;
+  margin-top: 9.4rem;
 }

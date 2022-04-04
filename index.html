@@ -9,10 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/queries.css" />
     <title>Portfolio Bart Erkamp</title>
   </head>
   <body>
+    <!-- Header -->
+
     <header class="heading container">
       <div class="header-logo">
         <a href="#"
@@ -38,47 +42,87 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <!-- Hero -->
 
       <section class="section-hero container">
-        <picture class="hero-img">
-          <img
-            src="/images/homepage/desktop/image-homepage-hero.jpg"
-            alt="Photo of a monitor with colorfull graphics"
-            class="hero-photo"
+        <picture>
+          <!-- mobile image -->
+          <source
+            srcset="
+              /images/homepage/mobile/image-homepage-hero.jpg    1x,
+              /images/homepage/mobile/image-homepage-hero@2x.jpg 2x
+            "
+            media="(max-width: 44em)"
+          />
+
+          <!-- tablet image -->
+          <source
+            srcset="
+              /images/homepage/tablet/image-homepage-hero.jpg    1x,
+              /images/homepage/tablet/image-homepage-hero@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
+
+          <!-- desktop image -->
+          <source
             srcset="
               /images/homepage/desktop/image-homepage-hero.jpg    1x,
               /images/homepage/desktop/image-homepage-hero@2x.jpg 2x
             "
+            media="(max-width: 90em)"
+          />
+
+          <img
+            src="/images/homepage/desktop/image-homepage-hero.jpg"
+            alt="Photo of a monitor with colorfull graphics"
+            class="hero-photo"
           />
         </picture>
         <div class="hero-text">
-          <h1>
-            Hey, I’m Alex Spencer and I <br />
-            love building beautiful websites
-          </h1>
+          <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
           <a class="btn btn-fill" href="#">about me</a>
         </div>
       </section>
 
       <!-- About Me -->
 
-      <section class="section-aboutme container">
-        <picture class="aboutme-img">
-          <img
-            src="/images/homepage/desktop/image-homepage-profile.jpg"
-            alt="A portrait photo of Alex Spencer"
-            class="hero-photo"
+      <section class="content-grid container">
+        <picture class="content-img">
+          <source
             srcset="
               /images/homepage/desktop/image-homepage-profile.jpg    1x,
               /images/homepage/desktop/image-homepage-profile@2x.jpg 2x
             "
+            media="(max-width: 44em)"
+          />
+
+          <source
+            srcset="
+              /images/homepage/tablet/image-homepage-profile.jpg    1x,
+              /images/homepage/tablet/image-homepage-profile@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
+          <source
+            srcset="
+              /images/homepage/desktop/image-homepage-profile.jpg    1x,
+              /images/homepage/desktop/image-homepage-profile@2x.jpg 2x
+            "
+            media="(max-width: 90em)"
+          />
+
+          <img
+            src="/images/homepage/desktop/image-homepage-profile.jpg"
+            alt="A portrait photo of Alex Spencer"
+            class="hero-photo"
           />
         </picture>
-        <div class="aboutme-content">
+        <div class="content-txt margin-right-grid">
           <h2>About Me</h2>
-          <p class="aboutme-txt">
+          <p>
             I’m a junior front-end developer looking for a new role in an
             exciting company. I focus on writing accessible HTML, using modern
             CSS practices and writing clean JavaScript. When writing JavaScript
@@ -95,7 +139,10 @@
       <!-- Contact -->
 
       <section class="section-contact container">
-        <h2>Interested in doing <br />a project together?</h2>
+        <h2>
+          Interested in doing<br />
+          a project together?
+        </h2>
         <div class="line"></div>
         <a class="btn btn-outline" href="#">Contact Me</a>
       </section>
@@ -103,8 +150,8 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
-      <section class="section-footer container">
+    <footer class="section-footer">
+      <div class="footer container">
         <div class="footer-logo">
           <a href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
@@ -129,11 +176,17 @@
           </ul>
         </nav>
         <div class="footer-socials">
-          <img class="social-icon" src="/images/icons/github.svg" alt="" />
-          <img class="social-icon" src="/images/icons/twitter.svg" alt="" />
-          <img class="social-icon" src="/images/icons/linkedin.svg" alt="" />
+          <a href="http://www.github.com" target="_blank"
+            ><img class="social-icon" src="/images/icons/github.svg" alt=""
+          /></a>
+          <a href="http://www.twitter.com" target="_blank"
+            ><img class="social-icon" src="/images/icons/twitter.svg" alt=""
+          /></a>
+          <a href="http://www.linkedin.com" target="_blank"
+            ><img class="social-icon" src="/images/icons/linkedin.svg" alt=""
+          /></a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
