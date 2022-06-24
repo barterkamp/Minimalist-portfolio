@@ -11,14 +11,14 @@
     />
 
     <link rel="stylesheet" href="/styles/main.css" />
-    <title>Portfolio Bart Erkamp</title>
+    <title>Minimalist Portfolio coded by Bart Erkamp</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="header container">
+    <header class="header center">
       <div class="header__logo">
-        <a href="#"
+        <a href="/index.html"
           ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
             <path
               fill="#33323D"
@@ -30,13 +30,13 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a class="navigation__link" href="#">Home</a>
+            <a class="navigation__link" href="/index.html">Home</a>
           </li>
           <li class="navigation__list-item">
             <a class="navigation__link" href="/portfolio.html">Portfolio</a>
           </li>
           <li class="navigation__list-item">
-            <a class="navigation__link" href="#">Contact Me</a>
+            <a class="navigation__link" href="/contactme.html">Contact Me</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +45,7 @@
     <main>
       <!-- Hero -->
 
-      <section class="hero container">
+      <section class="hero center">
         <picture>
           <!-- mobile image -->
           <source
@@ -71,32 +71,30 @@
               /images/homepage/desktop/image-homepage-hero.jpg    1x,
               /images/homepage/desktop/image-homepage-hero@2x.jpg 2x
             "
-            media="(max-width: 160em)"
           />
 
           <img
             src="/images/homepage/desktop/image-homepage-hero.jpg"
             alt="Photo of a monitor with colorfull graphics"
-            class="hero-photo"
           />
         </picture>
         <div class="hero__text">
           <h1 class="hero__header">
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
-          <a class="btn btn--fill" href="#">about me</a>
+          <a class="btn btn--fill" href="#aboutme">about me</a>
         </div>
       </section>
 
       <!-- About Me -->
 
-      <section class="aboutme grid-container container">
+      <section id="aboutme" class="aboutme grid-container center">
         <!-- place container class back -->
         <picture class="aboutme__photo">
           <source
             srcset="
-              /images/homepage/desktop/image-homepage-profile.jpg    1x,
-              /images/homepage/desktop/image-homepage-profile@2x.jpg 2x
+              /images/homepage/mobile/image-homepage-profile.jpg    1x,
+              /images/homepage/mobile/image-homepage-profile@2x.jpg 2x
             "
             media="(max-width: 44em)"
           />
@@ -113,12 +111,11 @@
               /images/homepage/desktop/image-homepage-profile.jpg    1x,
               /images/homepage/desktop/image-homepage-profile@2x.jpg 2x
             "
-            media="(max-width: 160em)"
           />
 
           <img
             src="/images/homepage/desktop/image-homepage-profile.jpg"
-            alt="A portrait photo Alex Spencer"
+            alt="A portrait of Alex Spencer"
           />
         </picture>
         <div class="aboutme__txt">
@@ -134,26 +131,25 @@
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <a class="btn btn--outline margin-bottom" href="#">Go to Portfolio</a>
+          <a class="btn btn--outline" href="/portfolio.html">Go to Portfolio</a>
         </div>
       </section>
 
       <!-- Contact -->
 
-      <section class="contact container">
-        <h2>
-          Interested in doing<br />
-          a project together?
-        </h2>
-        <div class="line"></div>
-        <a class="btn btn--outline" href="#">Contact Me</a>
+      <section class="contact grid-container">
+        <h2 class="contact__header">Interested in doing a project together?</h2>
+        <div class="contact__hrline"><hr /></div>
+        <a class="btn btn--outline contact__button" href="/contactme.html"
+          >Contact Me</a
+        >
       </section>
     </main>
 
     <!-- Footer -->
 
     <footer class="section-footer">
-      <div class="footer container">
+      <div class="footer center">
         <div class="footer__logo">
           <a href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
@@ -167,13 +163,13 @@
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="header__list-item">
-              <a class="footer__link" href="#">Home</a>
+              <a class="footer__link" href="/index.html">Home</a>
             </li>
             <li class="header__list-item">
-              <a class="footer__link" href="#">Portfolio</a>
+              <a class="footer__link" href="/portfolio.html">Portfolio</a>
             </li>
             <li class="header__list-item">
-              <a class="footer__link" href="#">Contact Me</a>
+              <a class="footer__link" href="/contactme.html">Contact Me</a>
             </li>
           </ul>
         </nav>

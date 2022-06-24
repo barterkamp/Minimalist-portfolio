@@ -9,19 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="/styles/general.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/queries.css" /> -->
     <link rel="stylesheet" href="/styles/main.css" />
-    <title>Portfolio Bart Erkamp</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="header container">
+    <header class="header center">
       <div class="header__logo">
-        <a href="#"
-          ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+        <a href="/index.html"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
             <path
               fill="#33323D"
               fill-rule="evenodd"
@@ -31,14 +28,14 @@
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__list__item">
-            <a class="navigation__link" href="#">Home</a>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/index.html">Home</a>
           </li>
-          <li class="navigation__list__item">
-            <a class="navigation__link" href="#">Portfolio</a>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/portfolio.html">Portfolio</a>
           </li>
-          <li class="navigation__list__item">
-            <a class="navigation__link" href="#">Contact Me</a>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/contactme.html">Contact Me</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +44,7 @@
     <main>
       <!-- Portfolio item #1 -->
 
-      <section class="portfolio grid-container container">
+      <section class="portfolio grid-container">
         <picture class="portfolio__img--left">
           <!-- mobile -->
           <source
@@ -78,7 +75,7 @@
 
           <img
             src="/images/portfolio/desktop/image-portfolio-manage.jpg"
-            alt="Screenshot of the Manage project "
+            alt="Screenshot of the Manage project"
           />
         </picture>
         <div class="portfolio__txt txt--right">
@@ -89,13 +86,13 @@
             JavaScript for the areas that required interactivity, such as the
             testimonial slider.
           </p>
-          <a class="btn btn--outline" href="#">view project</a>
+          <a class="btn btn--outline" href="/manage.html">view project</a>
         </div>
       </section>
 
       <!-- Portfolio item #2 -->
 
-      <section class="portfolio grid-container container">
+      <section class="portfolio grid-container">
         <div class="portfolio__txt txt--left">
           <h2>Bookmark</h2>
           <p>
@@ -104,7 +101,7 @@
             JavaScript for the areas that required interactivity, such as the
             features section.
           </p>
-          <a class="btn btn--outline" href="#">view project</a>
+          <a class="btn btn--outline" href="/bookmark.html">view project</a>
         </div>
         <picture class="portfolio__img--right">
           <!-- mobile -->
@@ -143,7 +140,7 @@
 
       <!-- Portfolio item #3 -->
 
-      <section class="portfolio grid-container container">
+      <section class="portfolio grid-container">
         <picture class="portfolio__img--left">
           <!-- mobile -->
           <source
@@ -174,7 +171,7 @@
 
           <img
             src="/images/portfolio/desktop/image-portfolio-insure.jpg"
-            alt="A portrait photo of Alex Spencer"
+            alt="Screenshot of the Insure project"
           />
         </picture>
         <div class="portfolio__txt txt--right">
@@ -185,13 +182,13 @@
             project required was to enable the toggling of the mobile
             navigation.
           </p>
-          <a class="btn btn--outline" href="#">view project</a>
+          <a class="btn btn--outline" href="/insure.html">view project</a>
         </div>
       </section>
 
       <!-- Portfilio item #4 -->
 
-      <section class="portfolio grid-container container">
+      <section class="portfolio grid-container">
         <div class="portfolio__txt txt--left">
           <h2>Fylo</h2>
           <p>
@@ -200,7 +197,7 @@
             fully-responsive. I took a mobile-first approach and used modern CSS
             like Flexbox and Grid for layout purposes.
           </p>
-          <a class="btn btn--outline" href="#">view project</a>
+          <a class="btn btn--outline" href="/fylo.html">view project</a>
         </div>
         <picture class="portfolio__img--right">
           <!-- mobile -->
@@ -232,25 +229,24 @@
 
           <img
             src="/images/portfolio/desktop/image-portfolio-fylo.jpg"
-            alt="A portrait photo of Alex Spencer"
+            alt="Screenshot of the Fylo project"
           />
         </picture>
       </section>
 
-      <section class="contact container">
-        <h2>
-          Interested in doing<br />
-          a project together?
-        </h2>
-        <div class="line"></div>
-        <a class="btn btn--outline" href="#">Contact Me</a>
+      <section class="contact grid-container">
+        <h2 class="contact__header">Interested in doing a project together?</h2>
+        <div class="contact__hrline"><hr /></div>
+        <a class="btn btn--outline contact__button" href="/contactme.html"
+          >Contact Me</a
+        >
       </section>
     </main>
 
     <!-- Footer -->
 
     <footer class="section-footer">
-      <div class="footer container">
+      <div class="footer center">
         <div class="footer__logo">
           <a href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
@@ -264,13 +260,13 @@
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="header__list-item">
-              <a class="footer__link" href="#">Home</a>
+              <a class="footer__link" href="/index.html">Home</a>
             </li>
             <li class="header__list-item">
-              <a class="footer__link" href="#">Portfolio</a>
+              <a class="footer__link" href="/portfolio.html">Portfolio</a>
             </li>
             <li class="header__list-item">
-              <a class="footer__link" href="#">Contact Me</a>
+              <a class="footer__link" href="/contactme.html">Contact Me</a>
             </li>
           </ul>
         </nav>
