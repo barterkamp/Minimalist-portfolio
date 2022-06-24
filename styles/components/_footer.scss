@@ -1,0 +1,52 @@
+.section-footer {
+  background-color: $grayish-dark-blue;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+  gap: 4rem;
+
+  @media screen and (max-width: 82rem) {
+    padding: 2.4rem 4rem;
+  }
+
+  &__logo {
+    height: 3.2rem;
+  }
+
+  &__nav {
+    flex-basis: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 4.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $slightly-desaturated-cyan;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+
+    &.social__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

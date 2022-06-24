@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  margin-bottom: 15rem;
+
+  // @media screen and (max-width: 27rem) {
+  //   margin-bottom: 33rem;
+  // }
+
+  &__text {
+    background-color: $very-light-grey;
+    padding-top: 5.5rem;
+    max-width: 44.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    // @media screen and (max-width: 82rem) {
+    //   left: 4rem;
+    // }
+
+    // @media screen and (max-width: 27rem) {
+    //   left: 3.2rem;
+    //   max-width: 31.1rem;
+    //   padding-top: 0;
+    //   bottom: -28rem;
+    // }
+  }
+
+  &__header {
+    margin-bottom: 5.5rem;
+    // @media screen and (max-width: 27rem) {
+    //   margin-bottom: 3.2rem;
+    // }
+  }
+}

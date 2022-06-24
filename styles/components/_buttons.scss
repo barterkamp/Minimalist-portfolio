@@ -1,0 +1,36 @@
+.btn {
+  font-family: inherit;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1.7rem 3.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn--fill:link,
+.btn--fill:visited {
+  background-color: $dark-blue;
+  display: inline-block;
+  color: #fff;
+}
+
+.btn--fill:hover,
+.btn--fill:active {
+  background-color: $slightly-desaturated-cyan;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  border: 1px solid $grayish-dark-blue;
+  color: $grayish-dark-blue;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: $grayish-dark-blue;
+  color: #fff;
+}

@@ -9,18 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/general.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/queries.css" />
+
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Portfolio Bart Erkamp</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="heading container">
-      <div class="header-logo">
+    <header class="header container">
+      <div class="header__logo">
         <a href="#"
-          ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+          ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
             <path
               fill="#33323D"
               fill-rule="evenodd"
@@ -28,16 +27,16 @@
             /></svg
         ></a>
       </div>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-list-item">
-            <a class="header-link" href="#">Home</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="#">Home</a>
           </li>
-          <li class="header-list-item">
-            <a class="header-link" href="#">Portfolio</a>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/portfolio.html">Portfolio</a>
           </li>
-          <li class="header-list-item">
-            <a class="header-link" href="#">Contact Me</a>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="#">Contact Me</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +45,7 @@
     <main>
       <!-- Hero -->
 
-      <section class="section-hero container">
+      <section class="hero container">
         <picture>
           <!-- mobile image -->
           <source
@@ -72,7 +71,7 @@
               /images/homepage/desktop/image-homepage-hero.jpg    1x,
               /images/homepage/desktop/image-homepage-hero@2x.jpg 2x
             "
-            media="(max-width: 90em)"
+            media="(max-width: 160em)"
           />
 
           <img
@@ -81,16 +80,19 @@
             class="hero-photo"
           />
         </picture>
-        <div class="hero-text">
-          <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-          <a class="btn btn-fill" href="#">about me</a>
+        <div class="hero__text">
+          <h1 class="hero__header">
+            Hey, I’m Alex Spencer and I love building beautiful websites
+          </h1>
+          <a class="btn btn--fill" href="#">about me</a>
         </div>
       </section>
 
       <!-- About Me -->
 
-      <section class="content-grid container">
-        <picture class="content-img">
+      <section class="aboutme grid-container container">
+        <!-- place container class back -->
+        <picture class="aboutme__photo">
           <source
             srcset="
               /images/homepage/desktop/image-homepage-profile.jpg    1x,
@@ -111,17 +113,17 @@
               /images/homepage/desktop/image-homepage-profile.jpg    1x,
               /images/homepage/desktop/image-homepage-profile@2x.jpg 2x
             "
-            media="(max-width: 90em)"
+            media="(max-width: 160em)"
           />
 
           <img
             src="/images/homepage/desktop/image-homepage-profile.jpg"
-            alt="A portrait photo of Alex Spencer"
-            class="hero-photo"
+            alt="A portrait photo Alex Spencer"
           />
         </picture>
-        <div class="content-txt margin-right-grid">
-          <h2>About Me</h2>
+        <div class="aboutme__txt">
+          <!-- margin-right-grid -->
+          <h2 class="aboutme__header">About Me</h2>
           <p>
             I’m a junior front-end developer looking for a new role in an
             exciting company. I focus on writing accessible HTML, using modern
@@ -132,19 +134,19 @@
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <a class="btn btn-outline" href="#">Go to Portfolio</a>
+          <a class="btn btn--outline margin-bottom" href="#">Go to Portfolio</a>
         </div>
       </section>
 
       <!-- Contact -->
 
-      <section class="section-contact container">
+      <section class="contact container">
         <h2>
           Interested in doing<br />
           a project together?
         </h2>
         <div class="line"></div>
-        <a class="btn btn-outline" href="#">Contact Me</a>
+        <a class="btn btn--outline" href="#">Contact Me</a>
       </section>
     </main>
 
@@ -152,9 +154,9 @@
 
     <footer class="section-footer">
       <div class="footer container">
-        <div class="footer-logo">
+        <div class="footer__logo">
           <a href="#"
-            ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+            ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
               <path
                 fill="#ffffff"
                 fill-rule="evenodd"
@@ -162,28 +164,28 @@
               /></svg
           ></a>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-list">
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Home</a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Home</a>
             </li>
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Portfolio</a>
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Portfolio</a>
             </li>
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Contact Me</a>
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Contact Me</a>
             </li>
           </ul>
         </nav>
-        <div class="footer-socials">
+        <div class="footer__socials">
           <a href="http://www.github.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/github.svg" alt=""
+            ><img class="social__icon" src="/images/icons/github.svg" alt=""
           /></a>
           <a href="http://www.twitter.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/twitter.svg" alt=""
+            ><img class="social__icon" src="/images/icons/twitter.svg" alt=""
           /></a>
           <a href="http://www.linkedin.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/linkedin.svg" alt=""
+            ><img class="social__icon" src="/images/icons/linkedin.svg" alt=""
           /></a>
         </div>
       </div>

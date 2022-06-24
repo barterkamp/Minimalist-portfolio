@@ -9,16 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/general.css" />
+    <!-- <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/queries.css" />
+    <link rel="stylesheet" href="/styles/queries.css" /> -->
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Portfolio Bart Erkamp</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="heading container">
-      <div class="header-logo">
+    <header class="header container">
+      <div class="header__logo">
         <a href="#"
           ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
             <path
@@ -28,156 +29,231 @@
             /></svg
         ></a>
       </div>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-list-item">
-            <a class="header-link" href="#">Home</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list__item">
+            <a class="navigation__link" href="#">Home</a>
           </li>
-          <li class="header-list-item">
-            <a class="header-link" href="#">Portfolio</a>
+          <li class="navigation__list__item">
+            <a class="navigation__link" href="#">Portfolio</a>
           </li>
-          <li class="header-list-item">
-            <a class="header-link" href="#">Contact Me</a>
+          <li class="navigation__list__item">
+            <a class="navigation__link" href="#">Contact Me</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- Portfilio item #1 -->
-      <div class="wrapper">
-        <section class="content-grid container">
-          <picture>
-            <source
-              srcset="
-                /images/portfolio/desktop/image-portfolio-manage.jpg    1x,
-                /images/portfolio/desktop/image-portfolio-manage@2x.jpg 2x
-              "
-            />
+      <!-- Portfolio item #1 -->
 
-            <img
-              src="/images/portfolio/desktop/image-portfolio-manage.jpg"
-              alt="A portrait photo of Alex Spencer"
-              class="content-img"
-            />
-          </picture>
-          <div class="content-txt margin-right-grid">
-            <h2>Manage</h2>
-            <p>
-              This project required me to build a fully responsive landing page
-              to the designs provided. I used HTML5, along with CSS Grid and
-              JavaScript for the areas that required interactivity, such as the
-              testimonial slider.
-            </p>
-            <a class="btn btn-outline" href="#">view project</a>
-          </div>
-        </section>
+      <section class="portfolio grid-container container">
+        <picture class="portfolio__img--left">
+          <!-- mobile -->
+          <source
+            srcset="
+              /images/portfolio/mobile/image-portfolio-manage.jpg    1x,
+              /images/portfolio/mobile/image-portfolio-manage@2x.jpg 2x
+            "
+            media="(max-width: 44em)"
+          />
 
-        <!-- Portfilio item #2 -->
+          <!-- tablet -->
+          <source
+            srcset="
+              /images/portfolio/tablet/image-portfolio-manage.jpg    1x,
+              /images/portfolio/tablet/image-portfolio-manage@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
 
-        <section class="content-grid container">
-          <div class="content-txt margin-left-grid">
-            <h2>Bookmark</h2>
-            <p>
-              This project required me to build a fully responsive landing page
-              to the designs provided. I used HTML5, along with CSS Grid and
-              JavaScript for the areas that required interactivity, such as the
-              features section.
-            </p>
-            <a class="btn btn-outline" href="#">view project</a>
-          </div>
-          <picture class="row-start-1">
-            <source
-              srcset="
-                /images/portfolio/desktop/image-portfolio-bookmark.jpg    1x,
-                /images/portfolio/desktop/image-portfolio-bookmark@2x.jpg 2x
-              "
-            />
+          <!-- desktop -->
+          <source
+            srcset="
+              /images/portfolio/desktop/image-portfolio-manage.jpg    1x,
+              /images/portfolio/desktop/image-portfolio-manage@2x.jpg 2x
+            "
+            media="(max-width: 160em)"
+          />
 
-            <img
-              src="/images/portfolio/desktop/image-portfolio-bookmark.jpg"
-              alt="A portrait photo of Alex Spencer"
-              class="content-img"
-            />
-          </picture>
-        </section>
+          <img
+            src="/images/portfolio/desktop/image-portfolio-manage.jpg"
+            alt="Screenshot of the Manage project "
+          />
+        </picture>
+        <div class="portfolio__txt txt--right">
+          <h2>Manage</h2>
+          <p>
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+          <a class="btn btn--outline" href="#">view project</a>
+        </div>
+      </section>
 
-        <!-- Portfilio item #3 -->
+      <!-- Portfolio item #2 -->
 
-        <section class="content-grid container">
-          <picture>
-            <source
-              srcset="
-                /images/portfolio/desktop/image-portfolio-insure.jpg    1x,
-                /images/portfolio/desktop/image-portfolio-insure@2x.jpg 2x
-              "
-            />
+      <section class="portfolio grid-container container">
+        <div class="portfolio__txt txt--left">
+          <h2>Bookmark</h2>
+          <p>
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            features section.
+          </p>
+          <a class="btn btn--outline" href="#">view project</a>
+        </div>
+        <picture class="portfolio__img--right">
+          <!-- mobile -->
+          <source
+            srcset="
+              /images/portfolio/mobile/image-portfolio-bookmark.jpg    1x,
+              /images/portfolio/mobile/image-portfolio-bookmark@2x.jpg 2x
+            "
+            media="(max-width: 44em)"
+          />
 
-            <img
-              src="/images/portfolio/desktop/image-portfolio-insure.jpg"
-              alt="A portrait photo of Alex Spencer"
-              class="content-img"
-            />
-          </picture>
-          <div class="content-txt margin-right-grid">
-            <h2>Insure</h2>
-            <p>
-              This was a small project which mostly consisted of HTML and CSS. I
-              built a fully-responsive landing page. The only JavaScript this
-              project required was to enable the toggling of the mobile
-              navigation.
-            </p>
-            <a class="btn btn-outline" href="#">view project</a>
-          </div>
-        </section>
+          <!-- tablet -->
+          <source
+            srcset="
+              /images/portfolio/tablet/image-portfolio-bookmark.jpg    1x,
+              /images/portfolio/tablet/image-portfolio-bookmark@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
 
-        <!-- Portfilio item #4 -->
+          <!-- desktop -->
+          <source
+            srcset="
+              /images/portfolio/desktop/image-portfolio-bookmark.jpg    1x,
+              /images/portfolio/desktop/image-portfolio-bookmark@2x.jpg 2x
+            "
+            media="(max-width: 160em)"
+          />
 
-        <section class="content-grid container">
-          <div class="content-txt margin-left-grid">
-            <h2>Fylo</h2>
-            <p>
-              This project was built in pure HTML and CSS. I had mobile and
-              desktop designs to work to and built it so that it was
-              fully-responsive. I took a mobile-first approach and used modern
-              CSS like Flexbox and Grid for layout purposes.
-            </p>
-            <a class="btn btn-outline" href="#">view project</a>
-          </div>
-          <picture class="row-start-1">
-            <source
-              srcset="
-                /images/portfolio/desktop/image-portfolio-fylo.jpg    1x,
-                /images/portfolio/desktop/image-portfolio-fylo@2x.jpg 2x
-              "
-            />
+          <img
+            src="/images/portfolio/desktop/image-portfolio-bookmark.jpg"
+            alt="A Screenshot of the bookmark project"
+          />
+        </picture>
+      </section>
 
-            <img
-              src="/images/portfolio/desktop/image-portfolio-fylo.jpg"
-              alt="A portrait photo of Alex Spencer"
-              class="content-img"
-            />
-          </picture>
-        </section>
+      <!-- Portfolio item #3 -->
 
-        <section class="section-contact container">
-          <h2>
-            Interested in doing<br />
-            a project together?
-          </h2>
-          <div class="line"></div>
-          <a class="btn btn-outline" href="#">Contact Me</a>
-        </section>
-      </div>
+      <section class="portfolio grid-container container">
+        <picture class="portfolio__img--left">
+          <!-- mobile -->
+          <source
+            srcset="
+              /images/portfolio/mobile/image-portfolio-insure.jpg    1x,
+              /images/portfolio/mobile/image-portfolio-insure@2x.jpg 2x
+            "
+            media="(max-width: 44em)"
+          />
+
+          <!-- tablet -->
+          <source
+            srcset="
+              /images/portfolio/tablet/image-portfolio-insure.jpg    1x,
+              /images/portfolio/tablet/image-portfolio-insure@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
+
+          <!-- desktop -->
+          <source
+            srcset="
+              /images/portfolio/desktop/image-portfolio-insure.jpg    1x,
+              /images/portfolio/desktop/image-portfolio-insure@2x.jpg 2x
+            "
+            media="(max-width: 160em)"
+          />
+
+          <img
+            src="/images/portfolio/desktop/image-portfolio-insure.jpg"
+            alt="A portrait photo of Alex Spencer"
+          />
+        </picture>
+        <div class="portfolio__txt txt--right">
+          <h2>Insure</h2>
+          <p>
+            This was a small project which mostly consisted of HTML and CSS. I
+            built a fully-responsive landing page. The only JavaScript this
+            project required was to enable the toggling of the mobile
+            navigation.
+          </p>
+          <a class="btn btn--outline" href="#">view project</a>
+        </div>
+      </section>
+
+      <!-- Portfilio item #4 -->
+
+      <section class="portfolio grid-container container">
+        <div class="portfolio__txt txt--left">
+          <h2>Fylo</h2>
+          <p>
+            This project was built in pure HTML and CSS. I had mobile and
+            desktop designs to work to and built it so that it was
+            fully-responsive. I took a mobile-first approach and used modern CSS
+            like Flexbox and Grid for layout purposes.
+          </p>
+          <a class="btn btn--outline" href="#">view project</a>
+        </div>
+        <picture class="portfolio__img--right">
+          <!-- mobile -->
+          <source
+            srcset="
+              /images/portfolio/mobile/image-portfolio-fylo.jpg    1x,
+              /images/portfolio/mobile/image-portfolio-fylo@2x.jpg 2x
+            "
+            media="(max-width: 44em)"
+          />
+
+          <!-- tablet -->
+          <source
+            srcset="
+              /images/portfolio/tablet/image-portfolio-fylo.jpg    1x,
+              /images/portfolio/tablet/image-portfolio-fylo@2x.jpg 2x
+            "
+            media="(max-width: 60em)"
+          />
+
+          <!-- desktop -->
+          <source
+            srcset="
+              /images/portfolio/desktop/image-portfolio-fylo.jpg    1x,
+              /images/portfolio/desktop/image-portfolio-fylo@2x.jpg 2x
+            "
+            media="(max-width: 160em)"
+          />
+
+          <img
+            src="/images/portfolio/desktop/image-portfolio-fylo.jpg"
+            alt="A portrait photo of Alex Spencer"
+          />
+        </picture>
+      </section>
+
+      <section class="contact container">
+        <h2>
+          Interested in doing<br />
+          a project together?
+        </h2>
+        <div class="line"></div>
+        <a class="btn btn--outline" href="#">Contact Me</a>
+      </section>
     </main>
 
     <!-- Footer -->
 
     <footer class="section-footer">
       <div class="footer container">
-        <div class="footer-logo">
+        <div class="footer__logo">
           <a href="#"
-            ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+            ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
               <path
                 fill="#ffffff"
                 fill-rule="evenodd"
@@ -185,28 +261,28 @@
               /></svg
           ></a>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-list">
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Home</a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Home</a>
             </li>
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Portfolio</a>
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Portfolio</a>
             </li>
-            <li class="header-list-item">
-              <a class="footer-link" href="#">Contact Me</a>
+            <li class="header__list-item">
+              <a class="footer__link" href="#">Contact Me</a>
             </li>
           </ul>
         </nav>
-        <div class="footer-socials">
+        <div class="footer__socials">
           <a href="http://www.github.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/github.svg" alt=""
+            ><img class="social__icon" src="/images/icons/github.svg" alt=""
           /></a>
           <a href="http://www.twitter.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/twitter.svg" alt=""
+            ><img class="social__icon" src="/images/icons/twitter.svg" alt=""
           /></a>
           <a href="http://www.linkedin.com" target="_blank"
-            ><img class="social-icon" src="/images/icons/linkedin.svg" alt=""
+            ><img class="social__icon" src="/images/icons/linkedin.svg" alt=""
           /></a>
         </div>
       </div>

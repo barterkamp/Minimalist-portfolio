@@ -1,0 +1,32 @@
+.header {
+  margin-top: 6.4rem;
+  margin-bottom: 5.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    height: 3.2rem;
+  }
+
+  .navigation {
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 4.2rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    &__link:link,
+    &__link:visited {
+      color: $dark-blue;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: $slightly-desaturated-cyan;
+    }
+  }
+}

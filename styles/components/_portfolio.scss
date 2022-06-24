@@ -1,0 +1,29 @@
+.portfolio {
+  margin-bottom: 8rem;
+
+  &__txt {
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.8rem;
+  }
+
+  & .txt--right {
+    grid-column: 8 / 12;
+  }
+
+  & .txt--left {
+    grid-column: 2 / 6;
+  }
+
+  &__img--left {
+    grid-column: 1 / 7;
+  }
+
+  &__img--right {
+    grid-column: 7 / 13;
+  }
+}

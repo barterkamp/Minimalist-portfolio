@@ -1,0 +1,489 @@
+/*
+  Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Set font-size to 10px;
+*/
+html {
+  font-size: 62.5%;
+}
+
+/*
+  Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Add accessible line-height
+  Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+/*
+  Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  max-width: 111rem;
+  margin: auto;
+}
+@media screen and (max-width: 82rem) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 26rem) {
+  .container {
+    padding: 0 3.6rem;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  max-width: 111rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 82rem) {
+  .grid-container {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 27rem) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova";
+  color: #33323d;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+  font-weight: 700;
+}
+@media screen and (max-width: 82rem) {
+  h1 {
+    font-size: 4rem;
+    line-height: 42px;
+    letter-spacing: -0.35px;
+  }
+}
+@media screen and (max-width: 48rem) {
+  h1 h1 {
+    margin: 0;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  letter-spacing: -0.35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  letter-spacing: -0.29px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 30px;
+  color: #33323d;
+}
+
+a {
+  text-decoration: none;
+}
+
+.margin-right-grid {
+  margin-right: 14rem;
+}
+
+.margin-left-grid {
+  margin-left: 14rem;
+}
+
+.header {
+  margin-top: 6.4rem;
+  margin-bottom: 5.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 3.2rem;
+}
+.header .navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 4.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header .navigation__link:link, .header .navigation__link:visited {
+  color: #203a4c;
+}
+.header .navigation__link:hover, .header .navigation__link:active {
+  color: #5fb4a2;
+}
+
+.btn {
+  font-family: inherit;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1.7rem 3.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn--fill:link,
+.btn--fill:visited {
+  background-color: #203a4c;
+  display: inline-block;
+  color: #fff;
+}
+
+.btn--fill:hover,
+.btn--fill:active {
+  background-color: #5fb4a2;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  border: 1px solid #33323d;
+  color: #33323d;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #33323d;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 15rem;
+}
+.hero__text {
+  background-color: #fafafa;
+  padding-top: 5.5rem;
+  max-width: 44.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.hero__header {
+  margin-bottom: 5.5rem;
+}
+
+.aboutme {
+  margin-bottom: 15rem;
+}
+.aboutme__photo {
+  grid-column: 1/span 6;
+}
+.aboutme__txt {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  grid-column: 8/span 4;
+}
+.aboutme .margin-bottom {
+  margin-bottom: 3.9rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rem;
+  gap: 3.2rem;
+  justify-content: space-between;
+  grid-column: 1/span 12;
+}
+
+.section-footer {
+  background-color: #33323d;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+  gap: 4rem;
+}
+@media screen and (max-width: 82rem) {
+  .footer {
+    padding: 2.4rem 4rem;
+  }
+}
+.footer__logo {
+  height: 3.2rem;
+}
+.footer__nav {
+  flex-basis: 100%;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 4.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer__link:link, .footer__link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__link:hover, .footer__link:active {
+  color: #5fb4a2;
+}
+.footer__socials {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__socials.social__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.portfolio {
+  margin-bottom: 8rem;
+}
+.portfolio__txt {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.8rem;
+}
+.portfolio .txt--right {
+  grid-column: 8/12;
+}
+.portfolio .txt--left {
+  grid-column: 2/6;
+}
+.portfolio__img--left {
+  grid-column: 1/7;
+}
+.portfolio__img--right {
+  grid-column: 7/13;
+}
+
+.project {
+  margin-bottom: 6.4rem;
+}
+.project__intro {
+  grid-column: 1/5;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.8rem;
+  align-self: start;
+}
+.project__background {
+  grid-column: 6/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.8rem;
+}
+.project__heading {
+  margin-top: 4.8rem;
+}
+.project__paragraph--grey {
+  opacity: 0.5;
+}
+.project__paragraph--accent {
+  font-weight: 700;
+  color: #5fb4a2;
+}
+.project__links {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  position: relative;
+  margin-bottom: 11.5rem;
+}
+.project__links::before {
+  content: url(/images/icons/arrow-left.svg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.project__links::after {
+  content: url(/images/icons/arrow-right.svg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.project__link:link, .project__link:visited {
+  color: #203a4c;
+}
+.project__link:hover, .project__link:active {
+  color: #5fb4a2;
+}
+.project__previous, .project__next {
+  padding: 3.2rem;
+}
+.project__previous {
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  grid-column: 1/7;
+  text-align: left;
+}
+.project__next {
+  grid-column: 8/-1;
+  text-align: right;
+}
+.project__preview {
+  margin-bottom: 3.2rem;
+}
+.project .btn {
+  margin-bottom: 4.8rem;
+}
+
+.getintouch {
+  margin-top: 9.4rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.getintouch__header {
+  grid-column: 1/4;
+  margin-top: 4.8rem;
+}
+.getintouch__content {
+  grid-column: 6/-1;
+  margin-top: 4.8rem;
+}
+.getintouch__socials {
+  display: flex;
+  gap: 1.5rem;
+  color: black;
+  margin-top: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+.getintouch__socials .icon {
+  color: black;
+  width: 24px;
+  height: 24px;
+}
+
+.contactme__form {
+  grid-column: 6/-1;
+  margin-top: 4.8rem;
+}
+.contactme label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.contactme input,
+.contactme textarea {
+  display: block;
+  margin-bottom: 2.4rem;
+  width: 100%;
+  border: none;
+  background-color: #e6e6e7;
+  color: #9e9ea3;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-left: 1.6rem;
+}
+.contactme input:focus,
+.contactme textarea:focus {
+  outline: none;
+  border: 1px solid #5fb4a2;
+}/*# sourceMappingURL=main.css.map */
