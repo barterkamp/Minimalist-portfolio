@@ -1,5 +1,7 @@
 .btn {
   font-family: inherit;
+  outline: 0;
+  border: 0;
   display: inline-block;
   font-weight: 400;
   font-size: 1.2rem;
@@ -9,6 +11,13 @@
   padding: 1.7rem 3.2rem;
   text-decoration: none;
   transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn--fill {
+  background-color: $dark-blue;
+  display: inline-block;
+  color: #fff;
 }
 
 .btn--fill:link,

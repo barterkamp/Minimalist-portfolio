@@ -1,6 +1,6 @@
 /* max 1200px */
 
-@media (max-width: 75em) {
+@media (max-width: 740px) {
   h1 {
     font-size: 40px;
     line-height: 42px;

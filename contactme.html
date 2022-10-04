@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/f06d8e237e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/form.js" defer></script>
 
     <title>Contact</title>
   </head>
@@ -85,24 +86,39 @@
         <div class="getintouch__header">
           <h2 class="getintouch__heading">Contact Me</h2>
         </div>
-        <form class="contactme__form">
-          <p>
-            <label for="" id="name">Name</label>
-            <input type="text" name="" id="name" />
+        <form id="form" class="contactme__form">
+          <p class="input-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jane Appleseed"
+            />
+            <small class="error-message"></small>
           </p>
-          <p>
-            <label for="" id="email">Email Address</label>
-            <input type="email" name="" id="email" />
+          <p class="input-control">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="email@example.com"
+            />
+            <small class="error-message"></small>
           </p>
-          <p>
-            <label for="" id="message">Message</label>
+          <p class="input-control">
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
               placeholder="How can I help?"
             ></textarea>
+            <small class="error-message"></small>
           </p>
-          <a class="btn btn--fill" href="#aboutme">send message</a>
+          <button type="submit" class="contactme__btn btn btn--fill">
+            send message
+          </button>
         </form>
       </section>
     </main>

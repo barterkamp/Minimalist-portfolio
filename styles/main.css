@@ -204,6 +204,8 @@ a {
 
 .btn {
   font-family: inherit;
+  outline: 0;
+  border: 0;
   display: inline-block;
   font-weight: 400;
   font-size: 1.2rem;
@@ -213,6 +215,13 @@ a {
   padding: 1.7rem 3.2rem;
   text-decoration: none;
   transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn--fill {
+  background-color: #203a4c;
+  display: inline-block;
+  color: #fff;
 }
 
 .btn--fill:link,
@@ -466,20 +475,20 @@ a {
   grid-column: 6/-1;
   margin-top: 4.8rem;
 }
+.contactme__btn {
+  align-self: start;
+}
 .contactme label {
-  display: block;
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 700;
 }
 .contactme input,
 .contactme textarea {
-  display: block;
-  margin-bottom: 2.4rem;
   width: 100%;
   border: none;
   background-color: #e6e6e7;
-  color: #9e9ea3;
+  color: #33323d;
   font-size: 1.3rem;
   font-weight: 700;
   padding-top: 0.9rem;
@@ -488,6 +497,35 @@ a {
 }
 .contactme input:focus,
 .contactme textarea:focus {
-  outline: none;
+  outline: 0;
   border: 1px solid #5fb4a2;
+}
+.contactme ::-moz-placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.contactme :-ms-input-placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.contactme ::placeholder {
+  color: #33323d;
+  opacity: 0.4;
+}
+.contactme .input-control {
+  margin-bottom: 2.4rem;
+}
+.contactme .input-control.success input,
+.contactme .input-control.success textarea {
+  border: 1px solid #5fb4a2;
+}
+.contactme .input-control.error input,
+.contactme .input-control.error textarea {
+  border: 1px solid #f43030;
+}
+.contactme .error-message {
+  font-style: italic;
+  color: #f43030;
+  font-weight: bold;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
