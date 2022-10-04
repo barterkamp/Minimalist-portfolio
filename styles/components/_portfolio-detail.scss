@@ -32,7 +32,6 @@
 
   &__paragraph--accent {
     font-weight: 700;
-
     color: $slightly-desaturated-cyan;
   }
 
@@ -41,22 +40,12 @@
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
     position: relative;
     margin-bottom: 11.5rem;
+  }
 
-    &::before {
-      content: url(/images/icons/arrow-left.svg);
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
-
-    &::after {
-      content: url(/images/icons/arrow-right.svg);
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  &__link--txt {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
   }
 
   &__link:link,
@@ -71,7 +60,7 @@
 
   &__previous,
   &__next {
-    padding: 3.2rem;
+    padding: 3.2rem 0;
   }
 
   &__previous {
@@ -81,8 +70,9 @@
   }
 
   &__next {
-    grid-column: 8 / -1;
+    grid-column: 7 / -1;
     text-align: right;
+    justify-self: end;
   }
 
   &__preview {

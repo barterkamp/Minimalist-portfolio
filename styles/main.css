@@ -25,11 +25,6 @@ html {
 /*
   Allow percentage-based heights in the application
 */
-html,
-body {
-  height: 100%;
-}
-
 /*
   Add accessible line-height
   Improve text rendering
@@ -37,6 +32,9 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*
@@ -184,6 +182,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .header__logo {
   height: 3.2rem;
@@ -295,6 +294,8 @@ a {
 
 .section-footer {
   background-color: #33323d;
+  flex: 0;
+  justify-self: end;
 }
 
 .footer {
@@ -401,19 +402,10 @@ a {
   position: relative;
   margin-bottom: 11.5rem;
 }
-.project__links::before {
-  content: url(/images/icons/arrow-left.svg);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.project__links::after {
-  content: url(/images/icons/arrow-right.svg);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.project__link--txt {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 .project__link:link, .project__link:visited {
   color: #203a4c;
@@ -422,7 +414,7 @@ a {
   color: #5fb4a2;
 }
 .project__previous, .project__next {
-  padding: 3.2rem;
+  padding: 3.2rem 0;
 }
 .project__previous {
   border-right: 1px solid rgba(51, 50, 61, 0.15);
@@ -430,8 +422,9 @@ a {
   text-align: left;
 }
 .project__next {
-  grid-column: 8/-1;
+  grid-column: 7/-1;
   text-align: right;
+  justify-self: end;
 }
 .project__preview {
   margin-bottom: 3.2rem;
@@ -466,6 +459,9 @@ a {
   height: 24px;
 }
 
+.contactme {
+  margin-bottom: 11rem;
+}
 .contactme__form {
   grid-column: 6/-1;
   margin-top: 4.8rem;

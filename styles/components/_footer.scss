@@ -1,5 +1,7 @@
 .section-footer {
   background-color: $grayish-dark-blue;
+  flex: 0;
+  justify-self: end;
 }
 
 .footer {

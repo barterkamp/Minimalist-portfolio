@@ -23,16 +23,12 @@
 
 html {
   font-size: 62.5%;
+ 
 }
 
 /*
   Allow percentage-based heights in the application
 */
-
-html,
-body {
-  height: 100%;
-}
 
 /*
   Add accessible line-height
@@ -41,6 +37,10 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // position: relative;
 }
 /*
   Improve media defaults
