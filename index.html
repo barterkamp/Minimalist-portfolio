@@ -9,14 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-
+    <script src="./javascript/navigation.js" defer></script>
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Minimalist Portfolio coded by Bart Erkamp</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="header center">
+    <header class="header container">
       <div class="header__logo">
         <a href="/index.html"
           ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
@@ -40,13 +40,18 @@
             <a class="navigation__link" href="/contactme.html">Contact Me</a>
           </li>
         </ul>
+        <div class="navigation__hamburger">
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <!-- Hero -->
 
-      <section class="hero center">
+      <section class="hero container">
         <picture>
           <!-- mobile image -->
           <source
@@ -150,7 +155,7 @@
     <!-- Footer -->
 
     <footer class="section-footer">
-      <div class="footer center">
+      <div class="footer container">
         <div class="footer__logo">
           <a href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">

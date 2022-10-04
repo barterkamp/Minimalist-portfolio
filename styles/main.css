@@ -98,18 +98,13 @@ h6 {
   }
 }
 
-.center {
+.container {
   max-width: 111rem;
   margin: auto;
 }
-@media screen and (max-width: 82rem) {
-  .center {
-    padding: 0 4rem;
-  }
-}
-@media screen and (max-width: 26rem) {
-  .center {
-    padding: 0 3.6rem;
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 311px;
   }
 }
 
@@ -195,11 +190,63 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.header .navigation__list.active {
+  right: 40px;
+}
+@media (max-width: 475px) {
+  .header .navigation__list {
+    position: absolute;
+    flex-direction: column;
+    background-color: #33323d;
+    align-items: center;
+    right: -500px;
+    top: 120px;
+    z-index: 100;
+    transition: 0.7s;
+    padding: 4rem 7rem;
+  }
+}
+.header .navigation__link {
+  transition: 0.3s ease;
+}
 .header .navigation__link:link, .header .navigation__link:visited {
+  text-decoration: none;
   color: #203a4c;
+}
+@media (max-width: 480px) {
+  .header .navigation__link:link, .header .navigation__link:visited {
+    color: white;
+  }
 }
 .header .navigation__link:hover, .header .navigation__link:active {
   color: #5fb4a2;
+}
+.header .navigation__hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .header .navigation__hamburger {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.header .navigation__hamburger.active .navigation__bar:nth-child(2) {
+  opacity: 0;
+}
+.header .navigation__hamburger.active .navigation__bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.header .navigation__hamburger.active .navigation__bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+.header .navigation__bar {
+  display: block;
+  width: 24px;
+  height: 1px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #33323d;
 }
 
 .btn {
@@ -246,6 +293,20 @@ a {
 .btn--outline:active {
   background-color: #33323d;
   color: #fff;
+}
+
+.hamburger {
+  position: absolute;
+  z-index: 100;
+  right: 1rem;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  height: 24px;
+}
+
+.menu-close {
+  display: none;
 }
 
 .hero {

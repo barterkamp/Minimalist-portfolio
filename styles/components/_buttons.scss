@@ -43,3 +43,17 @@
   background-color: $grayish-dark-blue;
   color: #fff;
 }
+
+.hamburger {
+  position: absolute;
+  z-index: 100;
+  right: 1rem;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  height: 24px;
+}
+
+.menu-close {
+  display: none;
+}

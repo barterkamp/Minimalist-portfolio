@@ -18,16 +18,70 @@
       font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 2px;
+
+      &.active {
+        right: 40px;
+      }
+
+      @media (max-width: 475px) {
+        position: absolute;
+        flex-direction: column;
+        background-color: $grayish-dark-blue;
+        align-items: center;
+        right: -500px;
+        top: 120px;
+        z-index: 100;
+        transition: 0.7s;
+        padding: 4rem 7rem;
+      }
     }
 
-    &__link:link,
-    &__link:visited {
-      color: $dark-blue;
+    &__link {
+      transition: 0.3s ease;
+
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $dark-blue;
+
+        @media (max-width: 480px) {
+          color: white;
+        }
+      }
+
+      &:hover,
+      &:active {
+        color: $slightly-desaturated-cyan;
+      }
     }
 
-    &__link:hover,
-    &__link:active {
-      color: $slightly-desaturated-cyan;
+    &__hamburger {
+      display: none;
+      cursor: pointer;
+
+      @media (max-width: 480px) {
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &.active .navigation__bar:nth-child(2) {
+        opacity: 0;
+      }
+      &.active .navigation__bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      &.active .navigation__bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+
+    &__bar {
+      display: block;
+      width: 24px;
+      height: 1px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: $grayish-dark-blue;
     }
   }
 }

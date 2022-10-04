@@ -14,15 +14,11 @@
   }
 }
 
-.center {
+.container {
   max-width: 111rem;
   margin: auto;
 
-  @media screen and (max-width: 82rem) {
-    padding: 0 4rem;
-  }
-
-  @media screen and (max-width: 26rem) {
-    padding: 0 3.6rem;
+  @media screen and (max-width: 480px) {
+    max-width: 311px;
   }
 }

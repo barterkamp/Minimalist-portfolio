@@ -11,13 +11,14 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <script src="./javascript/navigation.js" defer></script>
 
     <title>Bookmark Project</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header class="header center">
+    <header class="header container">
       <div class="header__logo">
         <a href="/index.html"
           ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
@@ -41,12 +42,17 @@
             <a class="navigation__link" href="/contactme.html">Contact Me</a>
           </li>
         </ul>
+        <div class="navigation__hamburger">
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+        </div>
       </nav>
     </header>
 
     <!-- Hero section -->
 
-    <section class="hero center">
+    <section class="hero container">
       <picture class="hero-photo">
         <!-- mobile image -->
         <source
@@ -224,7 +230,7 @@
 
       <!-- Contact section -->
 
-      <section class="contact grid-container center">
+      <section class="contact grid-container container">
         <h2 class="contact__header">Interested in doing a project together?</h2>
         <div class="contact__hrline"><hr /></div>
         <a class="btn btn--outline contact__button" href="/contactme.html"
@@ -236,7 +242,7 @@
     <!-- Footer section -->
 
     <footer class="section-footer">
-      <div class="footer center">
+      <div class="footer container">
         <div class="footer__logo">
           <a href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="90" height="32">
