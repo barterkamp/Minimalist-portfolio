@@ -723,7 +723,7 @@ a {
 }
 @media (max-width: 480px) {
   .getintouch {
-    margin-top: 2.5rem;
+    margin-top: 0;
   }
 }
 .getintouch__header {
