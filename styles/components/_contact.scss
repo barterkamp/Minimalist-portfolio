@@ -3,8 +3,19 @@
   align-items: center;
   margin-bottom: 15rem;
 
+  @media (max-width: 480px) {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
   &__header {
     grid-column: 1 / span 4;
+
+    @media screen and (max-width: 480px) {
+      grid-column: 1/ -1;
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   &__hrline {
@@ -13,11 +24,20 @@
     opacity: 0.3;
     border: none;
     grid-column: 5 / 11;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   &__button {
     grid-column: 11 / 14;
     justify-self: start;
+
+    @media screen and (max-width: 480px) {
+      grid-column: 1/ -1;
+      justify-self: center;
+    }
   }
 
   // @media screen and (max-width: 27rem) {

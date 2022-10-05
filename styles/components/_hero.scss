@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 15rem;
 
+  @media screen and (max-width: 480px) {
+    margin-bottom: 33rem;
+  }
+
   // @media screen and (max-width: 27rem) {
   //   margin-bottom: 33rem;
   // }
@@ -14,22 +18,18 @@
     left: 0;
     bottom: 0;
 
-    // @media screen and (max-width: 82rem) {
-    //   left: 4rem;
-    // }
-
-    // @media screen and (max-width: 27rem) {
-    //   left: 3.2rem;
-    //   max-width: 31.1rem;
-    //   padding-top: 0;
-    //   bottom: -28rem;
-    // }
+    @media screen and (max-width: 480px) {
+      // left: 3.2rem;
+      max-width: 311px;
+      padding-top: 0;
+      bottom: -28rem;
+    }
   }
 
   &__header {
     margin-bottom: 5.5rem;
-    // @media screen and (max-width: 27rem) {
-    //   margin-bottom: 3.2rem;
-    // }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 3.2rem;
+    }
   }
 }

@@ -9,8 +9,10 @@
     gap: 1rem;
   }
 
-  @media screen and (max-width: 27rem) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
+    max-width: 311px;
+    gap: 3.2rem;
   }
 }
 

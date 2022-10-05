@@ -45,6 +45,10 @@ h2 {
   letter-spacing: -0.35px;
   font-weight: 700;
 
+  @media (max-width: 480px) {
+    margin-top: 2.4rem;
+  }
+
   // same size as h1 on tablet and mobile view
 }
 

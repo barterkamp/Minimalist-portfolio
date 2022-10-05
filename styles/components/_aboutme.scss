@@ -1,24 +1,14 @@
 .aboutme {
-  // grid-column: 1 / -1;
-
-  // @media screen and (max-width: 82rem) {
-  //   gap: 3rem;
-  // }
-
-  // @media screen and (max-width: 82rem) {
-  //   margin-bottom: 11.5rem;
-  // }
+  &__header {
+    margin-top: 3.2rem;
+  }
 
   &__photo {
     grid-column: 1 / span 6;
 
-    // @media screen and (max-width: 50rem) {
-    //   grid-column: 1 / span 5;
-    // }
-
-    // @media screen and (max-width: 27rem) {
-    //   grid-column: 1 / 1;
-    // }
+    @media screen and (max-width: 480px) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__txt {
@@ -31,14 +21,24 @@
     gap: 2.4rem;
     grid-column: 8 / span 4;
 
-    // @media screen and (max-width: 50rem) {
-    //   grid-column: 7 / span 6;
-    // }
-
-    // @media screen and (max-width: 27rem) {
-    //   grid-column: 1 / 1;
-    // }
+    @media screen and (max-width: 480px) {
+      grid-column: 1 / -1;
+    }
   }
+
+  &__btn {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  // @media screen and (max-width: 50rem) {
+  //   grid-column: 7 / span 6;
+  // }
+
+  // @media screen and (max-width: 27rem) {
+  //   grid-column: 1 / 1;
+  // }
 
   // &__header {
   //   @media screen and (max-width: 50rem) {

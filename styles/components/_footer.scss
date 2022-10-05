@@ -14,8 +14,18 @@
     padding: 2.4rem 4rem;
   }
 
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 5.6rem;
+  }
+
   &__logo {
     height: 3.2rem;
+
+    @media (max-width: 480px) {
+      width: 6.1rem;
+    }
   }
 
   &__nav {
@@ -29,6 +39,11 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__link:link,

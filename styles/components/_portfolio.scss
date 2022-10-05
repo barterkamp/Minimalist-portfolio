@@ -1,6 +1,10 @@
 .portfolio {
   margin-bottom: 8rem;
 
+  @media (max-width: 480px) {
+    margin-bottom: 7.2rem;
+  }
+
   &__txt {
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -11,19 +15,43 @@
     gap: 2.8rem;
   }
 
+  &__btn {
+    @media (max-width: 480px) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
   & .txt--right {
     grid-column: 8 / 12;
+
+    @media (max-width: 480px) {
+      grid-column: 1/-1;
+    }
   }
 
   & .txt--left {
     grid-column: 2 / 6;
+
+    @media (max-width: 480px) {
+      grid-column: 1/-1;
+      order: 2;
+    }
   }
 
   &__img--left {
     grid-column: 1 / 7;
+
+    @media (max-width: 480px) {
+      grid-column: 1/-1;
+    }
   }
 
   &__img--right {
     grid-column: 7 / 13;
+
+    @media (max-width: 480px) {
+      grid-column: 1/-1;
+      order: 1;
+    }
   }
 }
