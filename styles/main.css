@@ -721,13 +721,30 @@ a {
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
+@media (max-width: 480px) {
+  .getintouch {
+    margin-top: 2.5rem;
+  }
+}
 .getintouch__header {
   grid-column: 1/4;
   margin-top: 4.8rem;
 }
+@media (max-width: 480px) {
+  .getintouch__header {
+    margin-top: 1rem;
+    grid-column: 1/-1;
+  }
+}
 .getintouch__content {
   grid-column: 6/-1;
   margin-top: 4.8rem;
+}
+@media (max-width: 480px) {
+  .getintouch__content {
+    grid-column: 1/-1;
+    margin-top: 0;
+  }
 }
 .getintouch__socials {
   display: flex;
@@ -748,6 +765,12 @@ a {
 .contactme__form {
   grid-column: 6/-1;
   margin-top: 4.8rem;
+}
+@media (max-width: 480px) {
+  .contactme__form {
+    grid-column: 1/-1;
+    margin-top: 0;
+  }
 }
 .contactme__btn {
   align-self: start;
