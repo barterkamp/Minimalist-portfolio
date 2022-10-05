@@ -1,4 +1,8 @@
 .aboutme {
+  @media screen and (max-width: 480px) {
+    margin-top: 33rem;
+  }
+
   &__header {
     margin-top: 3.2rem;
   }
