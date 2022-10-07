@@ -24,14 +24,14 @@
       text-transform: uppercase;
       letter-spacing: 2px;
 
-      @media (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 668px) {
         position: fixed;
         background-color: $grayish-dark-blue;
         flex-direction: column;
         align-items: center;
         gap: 3.2rem;
         right: -100%;
-        top: 80px;
+        top: 95px;
         z-index: 100;
         padding: 4rem 7rem;
 
@@ -43,8 +43,6 @@
       }
     }
 
-    
-
     &__link {
       transition: 0.3s ease;
 
@@ -53,7 +51,7 @@
         text-decoration: none;
         color: $dark-blue;
 
-        @media (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 668px) {
           color: white;
           margin-bottom: 3.2rem;
         }
@@ -69,7 +67,7 @@
       display: none;
       cursor: pointer;
 
-      @media (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 668px) {
         display: block;
         transition: all 0.3s ease-in-out;
       }

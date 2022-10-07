@@ -14,7 +14,7 @@
     padding: 2.4rem 4rem;
   }
 
-  @media (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 668px) {
     flex-direction: column;
     align-items: center;
     padding: 5.6rem;
@@ -23,7 +23,7 @@
   &__logo {
     height: 3.2rem;
 
-    @media (max-width: 480px) {
+    @media (min-width: 320px) and (max-width: 668px) {
       width: 6.1rem;
     }
   }
@@ -40,7 +40,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    @media (max-width: 480px) {
+    @media (min-width: 320px) and (max-width: 668px) {
       flex-direction: column;
       align-items: center;
     }
