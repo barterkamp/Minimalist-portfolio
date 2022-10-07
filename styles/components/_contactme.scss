@@ -4,7 +4,11 @@
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 
   @media (max-width: 480px) {
-    margin-top: 0; 
+    margin-top: 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 668px) {
+    margin-top: 0;
   }
 
   &__header {
@@ -22,7 +26,7 @@
     margin-top: 4.8rem;
 
     @media (max-width: 480px) {
-      grid-column: 1 / -1; 
+      grid-column: 1 / -1;
       margin-top: 0;
     }
   }
@@ -48,7 +52,7 @@
   &__form {
     grid-column: 6 / -1;
     margin-top: 4.8rem;
-    
+
     @media (max-width: 480px) {
       grid-column: 1 / -1;
       margin-top: 0;
@@ -111,6 +115,4 @@
     font-weight: bold;
     font-size: 1rem;
   }
-
-  
 }

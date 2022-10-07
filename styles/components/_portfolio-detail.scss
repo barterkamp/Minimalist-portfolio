@@ -77,6 +77,10 @@
       max-width: 311px;
       gap: 3.2rem;
     }
+
+    @media (min-width: 481px) and (max-width: 668px) {
+      max-width: 604px;
+    }
   }
 
   &__link-txt-previous {
