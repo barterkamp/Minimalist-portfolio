@@ -1,7 +1,7 @@
 .contact {
-  margin-top: 15rem;
   align-items: center;
   margin-bottom: 15rem;
+  margin-top: 15rem;
 
   @media (max-width: 480px) {
     margin-top: 6.4rem;
@@ -37,11 +37,11 @@
   }
 
   &__hrline {
-    height: 1px;
     background-color: $grayish-dark-blue;
-    opacity: 0.3;
     border: none;
     grid-column: 5 / 11;
+    height: 1px;
+    opacity: 0.3;
 
     @media (min-width: 320px) and (max-width: 668px) {
       display: none;

@@ -16,13 +16,13 @@
   }
 
   &__txt {
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    align-items: flex-start;
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2.8rem;
+    justify-content: center;
 
     @media (min-width: 481px) and (max-width: 668px) {
       gap: 1.8rem;

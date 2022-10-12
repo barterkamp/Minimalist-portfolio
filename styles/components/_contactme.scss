@@ -1,7 +1,7 @@
 .getintouch {
-  margin-top: 3.2rem;
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 3.2rem;
 
   @media (max-width: 480px) {
     margin-top: 0;
@@ -43,11 +43,11 @@
   }
 
   &__socials {
+    color: black;
     display: flex;
     gap: 1.5rem;
-    color: black;
-    margin-top: 2.4rem;
     margin-bottom: 4.8rem;
+    margin-top: 2.4rem;
 
     @media (min-width: 669px) and (max-width: 1150px) {
       margin-bottom: 0;
@@ -59,8 +59,8 @@
 
     & .icon {
       color: black;
-      width: 24px;
       height: 24px;
+      width: 24px;
     }
   }
 }
@@ -88,7 +88,6 @@
   }
 
   label {
-    // display: block;
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
     font-weight: 700;
@@ -96,27 +95,25 @@
 
   input,
   textarea {
-    // display: block;
-    // margin-bottom: 2.4rem;
-    width: 100%;
-    border: none;
     background-color: #e6e6e7;
+    border: none;
     color: $grayish-dark-blue;
     font-size: 1.3rem;
     font-weight: 700;
-    padding-top: 0.9rem;
     padding-bottom: 0.9rem;
     padding-left: 1.6rem;
+    padding-top: 0.9rem;
+    width: 100%;
 
     &:focus {
-      outline: 0;
       border: 1px solid $slightly-desaturated-cyan;
+      outline: 0;
     }
-  }
 
-  ::placeholder {
-    color: $grayish-dark-blue;
-    opacity: 0.4;
+    &::placeholder {
+      color: $grayish-dark-blue;
+      opacity: 0.4;
+    }
   }
 
   .input-control {
@@ -134,9 +131,9 @@
   }
 
   .error-message {
-    font-style: italic;
     color: $bright-red;
-    font-weight: bold;
     font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
   }
 }

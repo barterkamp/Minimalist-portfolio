@@ -1,9 +1,9 @@
 .header {
-  margin-top: 6.4rem;
-  margin-bottom: 5.4rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  margin-bottom: 5.4rem;
+  margin-top: 6.4rem;
   width: 100%;
 
   @media screen and (max-width: 480px) {
@@ -17,25 +17,24 @@
 
   .navigation {
     &__list {
-      list-style: none;
       display: flex;
-      gap: 4.2rem;
       font-size: 1.2rem;
-      text-transform: uppercase;
+      gap: 4.2rem;
       letter-spacing: 2px;
+      list-style: none;
+      text-transform: uppercase;
 
       @media (min-width: 320px) and (max-width: 668px) {
-        position: fixed;
+        align-items: center;
         background-color: $grayish-dark-blue;
         flex-direction: column;
-        align-items: center;
         gap: 3.2rem;
+        padding: 4rem 7rem;
+        position: fixed;
         right: -100%;
         top: 95px;
-        z-index: 100;
-        padding: 4rem 7rem;
-
         transition: 0.7s;
+        z-index: 100;
 
         &.active {
           right: 3.2rem;
@@ -46,10 +45,9 @@
     &__link {
       transition: 0.3s ease;
 
-      &:link,
-      &:visited {
-        text-decoration: none;
+      &:link {
         color: $dark-blue;
+        text-decoration: none;
 
         @media (min-width: 320px) and (max-width: 668px) {
           color: white;
@@ -58,7 +56,7 @@
       }
 
       &:hover,
-      &:active {
+      &:active, &:visited {
         color: $slightly-desaturated-cyan;
       }
     }
@@ -84,12 +82,12 @@
     }
 
     &__bar {
+      background-color: $grayish-dark-blue;
       display: block;
-      width: 24px;
       height: 1px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background-color: $grayish-dark-blue;
+      width: 24px;
     }
   }
 }

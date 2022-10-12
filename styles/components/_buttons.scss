@@ -1,30 +1,30 @@
 .btn {
-  font-family: inherit;
-  outline: 0;
   border: 0;
+  cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-family: inherit;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 1.4rem;
+  outline: 0;
   padding: 1.7rem 3.2rem;
   text-decoration: none;
+  text-transform: uppercase;
   transition: all 0.3s;
-  cursor: pointer;
 }
 
 .btn--fill {
   background-color: $dark-blue;
-  display: inline-block;
   color: #fff;
+  display: inline-block;
 }
 
 .btn--fill:link,
 .btn--fill:visited {
   background-color: $dark-blue;
-  display: inline-block;
   color: #fff;
+  display: inline-block;
 }
 
 .btn--fill:hover,
@@ -54,13 +54,13 @@
 }
 
 .hamburger {
-  position: absolute;
-  z-index: 100;
-  right: 1rem;
-  border: 0;
   background-color: #fff;
+  border: 0;
   cursor: pointer;
   height: 24px;
+  position: absolute;
+  right: 1rem;
+  z-index: 100;
 }
 
 .menu-close {
