@@ -241,7 +241,7 @@ a {
     margin-bottom: 3.2rem;
   }
 }
-.header .navigation__link:hover, .header .navigation__link:active, .header .navigation__link:visited {
+.header .navigation__link:hover, .header .navigation__link:active {
   color: #5fb4a2;
 }
 .header .navigation__hamburger {
