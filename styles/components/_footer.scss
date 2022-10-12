@@ -1,7 +1,7 @@
 .section-footer {
   background-color: $grayish-dark-blue;
   flex: 0;
-  justify-self: end;
+  margin-top: auto;
 }
 
 .footer {
@@ -61,9 +61,9 @@
     display: flex;
     gap: 1.5rem;
 
-    &.social__icon {
-      width: 25px;
-      height: 25px;
+    & .social__icon {
+      width: 23px;
+      height: 23px;
     }
   }
 }
