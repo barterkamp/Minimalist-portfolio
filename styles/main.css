@@ -577,11 +577,6 @@ a {
   padding: 2rem 0 2rem 0;
   gap: 4rem;
 }
-@media screen and (max-width: 82rem) {
-  .footer {
-    padding: 2.4rem 4rem;
-  }
-}
 @media (min-width: 320px) and (max-width: 668px) {
   .footer {
     flex-direction: column;
