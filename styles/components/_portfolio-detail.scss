@@ -102,8 +102,12 @@
       max-width: 604px;
     }
 
-    @media (min-width: 669px) and (max-width: 1150px) {
+    @media (min-width: 669px) and (max-width: 1023px) {
       max-width: 688px;
+    }
+  
+    @media (min-width: 1024px) and (max-width: 1150px) {
+      max-width: 850px;
     }
   }
 
