@@ -45,7 +45,8 @@
     &__link {
       transition: 0.3s ease;
 
-      &:link {
+      &:link,
+      &:visited {
         color: $dark-blue;
         text-decoration: none;
 

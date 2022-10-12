@@ -231,12 +231,12 @@ a {
 .header .navigation__link {
   transition: 0.3s ease;
 }
-.header .navigation__link:link {
+.header .navigation__link:link, .header .navigation__link:visited {
   color: #203a4c;
   text-decoration: none;
 }
 @media (min-width: 320px) and (max-width: 668px) {
-  .header .navigation__link:link {
+  .header .navigation__link:link, .header .navigation__link:visited {
     color: white;
     margin-bottom: 3.2rem;
   }
