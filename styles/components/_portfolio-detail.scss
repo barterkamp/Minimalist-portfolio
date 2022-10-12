@@ -11,7 +11,7 @@
     gap: 2.8rem;
     grid-column: 1 / 5;
     justify-content: center;
-    
+
     @media (max-width: 480px) {
       grid-column: 1 / -1;
       gap: 2.4rem;
@@ -102,7 +102,7 @@
     @media (min-width: 669px) and (max-width: 1023px) {
       max-width: 688px;
     }
-  
+
     @media (min-width: 1024px) and (max-width: 1150px) {
       max-width: 850px;
     }
@@ -156,7 +156,7 @@
   &__previous {
     border-right: 1px solid rgba(51, 50, 61, 0.15);
     grid-column: 1 / 7;
-    text-align: left;
+    text-align: left;;
 
     @media (max-width: 480px) {
       grid-column: 1 / 7;

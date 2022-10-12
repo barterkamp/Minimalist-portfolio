@@ -187,11 +187,11 @@ a {
 }
 
 .header {
-  margin-top: 6.4rem;
-  margin-bottom: 5.4rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  margin-bottom: 5.4rem;
+  margin-top: 6.4rem;
   width: 100%;
 }
 @media screen and (max-width: 480px) {
@@ -204,25 +204,25 @@ a {
   height: 3.2rem;
 }
 .header .navigation__list {
-  list-style: none;
   display: flex;
-  gap: 4.2rem;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  gap: 4.2rem;
   letter-spacing: 2px;
+  list-style: none;
+  text-transform: uppercase;
 }
 @media (min-width: 320px) and (max-width: 668px) {
   .header .navigation__list {
-    position: fixed;
+    align-items: center;
     background-color: #33323d;
     flex-direction: column;
-    align-items: center;
     gap: 3.2rem;
+    padding: 4rem 7rem;
+    position: fixed;
     right: -100%;
     top: 95px;
-    z-index: 100;
-    padding: 4rem 7rem;
     transition: 0.7s;
+    z-index: 100;
   }
   .header .navigation__list.active {
     right: 3.2rem;
@@ -231,17 +231,17 @@ a {
 .header .navigation__link {
   transition: 0.3s ease;
 }
-.header .navigation__link:link, .header .navigation__link:visited {
-  text-decoration: none;
+.header .navigation__link:link {
   color: #203a4c;
+  text-decoration: none;
 }
 @media (min-width: 320px) and (max-width: 668px) {
-  .header .navigation__link:link, .header .navigation__link:visited {
+  .header .navigation__link:link {
     color: white;
     margin-bottom: 3.2rem;
   }
 }
-.header .navigation__link:hover, .header .navigation__link:active {
+.header .navigation__link:hover, .header .navigation__link:active, .header .navigation__link:visited {
   color: #5fb4a2;
 }
 .header .navigation__hamburger {
@@ -264,41 +264,41 @@ a {
   transform: translateY(-6px) rotate(-45deg);
 }
 .header .navigation__bar {
+  background-color: #33323d;
   display: block;
-  width: 24px;
   height: 1px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #33323d;
+  width: 24px;
 }
 
 .btn {
-  font-family: inherit;
-  outline: 0;
   border: 0;
+  cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-family: inherit;
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 1.4rem;
+  outline: 0;
   padding: 1.7rem 3.2rem;
   text-decoration: none;
+  text-transform: uppercase;
   transition: all 0.3s;
-  cursor: pointer;
 }
 
 .btn--fill {
   background-color: #203a4c;
-  display: inline-block;
   color: #fff;
+  display: inline-block;
 }
 
 .btn--fill:link,
 .btn--fill:visited {
   background-color: #203a4c;
-  display: inline-block;
   color: #fff;
+  display: inline-block;
 }
 
 .btn--fill:hover,
@@ -328,13 +328,13 @@ a {
 }
 
 .hamburger {
-  position: absolute;
-  z-index: 100;
-  right: 1rem;
-  border: 0;
   background-color: #fff;
+  border: 0;
   cursor: pointer;
   height: 24px;
+  position: absolute;
+  right: 1rem;
+  z-index: 100;
 }
 
 .menu-close {
@@ -342,8 +342,8 @@ a {
 }
 
 .hero {
-  position: relative;
   margin-bottom: 11.5rem;
+  position: relative;
 }
 @media (min-width: 744px) and (max-width: 1150px) {
   .hero {
@@ -357,18 +357,18 @@ a {
 }
 .hero__text {
   background-color: #fafafa;
-  padding-top: 5.5rem;
-  max-width: 44.5rem;
-  position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  max-width: 44.5rem;
+  padding-top: 5.5rem;
+  position: absolute;
 }
 @media screen and (max-width: 480px) {
   .hero__text {
+    background-color: #fff;
+    bottom: -28rem;
     max-width: 311px;
     padding-top: 0;
-    bottom: -28rem;
-    background-color: #fff;
   }
 }
 .hero__header {
@@ -407,14 +407,14 @@ a {
   }
 }
 .aboutme__txt {
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
-  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 2.4rem;
   grid-column: 8/span 4;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 @media screen and (max-width: 480px) {
   .aboutme__txt {
@@ -446,9 +446,9 @@ a {
 }
 
 .contact {
-  margin-top: 15rem;
   align-items: center;
   margin-bottom: 15rem;
+  margin-top: 15rem;
 }
 @media (max-width: 480px) {
   .contact {
@@ -489,11 +489,11 @@ a {
   }
 }
 .contact__hrline {
-  height: 1px;
   background-color: #33323d;
-  opacity: 0.3;
   border: none;
   grid-column: 5/11;
+  height: 1px;
+  opacity: 0.3;
 }
 @media (min-width: 320px) and (max-width: 668px) {
   .contact__hrline {
@@ -502,7 +502,7 @@ a {
 }
 @media (min-width: 669px) and (max-width: 1150px) {
   .contact__hrline {
-    grid-column: 7/10;
+    grid-column: 7/9;
   }
 }
 .contact__button {
@@ -523,7 +523,7 @@ a {
 }
 @media (min-width: 669px) and (max-width: 1150px) {
   .contact__button {
-    grid-column: 10/-1;
+    grid-column: 9/-1;
   }
 }
 
@@ -534,15 +534,15 @@ a {
 }
 
 .footer {
-  display: flex;
   align-items: center;
-  padding: 2rem 0 2rem 0;
+  display: flex;
   gap: 4rem;
+  padding: 2rem 0 2rem 0;
 }
 @media (min-width: 320px) and (max-width: 668px) {
   .footer {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 5.6rem;
   }
 }
@@ -558,22 +558,22 @@ a {
   flex-basis: 100%;
 }
 .footer__list {
-  list-style: none;
   display: flex;
-  gap: 4.2rem;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  gap: 4.2rem;
   letter-spacing: 2px;
+  list-style: none;
+  text-transform: uppercase;
 }
 @media (min-width: 320px) and (max-width: 668px) {
   .footer__list {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 }
 .footer__link:link, .footer__link:visited {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 .footer__link:hover, .footer__link:active {
   color: #5fb4a2;
@@ -583,8 +583,8 @@ a {
   gap: 1.5rem;
 }
 .footer__socials .social__icon {
-  width: 23px;
   height: 23px;
+  width: 23px;
 }
 
 .portfolio {
@@ -606,13 +606,13 @@ a {
   }
 }
 .portfolio__txt {
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  align-items: flex-start;
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 2.8rem;
+  justify-content: center;
 }
 @media (min-width: 481px) and (max-width: 668px) {
   .portfolio__txt {
@@ -688,15 +688,15 @@ a {
   margin-bottom: 6.4rem;
 }
 .project__intro {
-  grid-column: 1/5;
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  align-items: flex-start;
+  align-self: start;
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 2.8rem;
-  align-self: start;
+  grid-column: 1/5;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   .project__intro {
@@ -710,12 +710,12 @@ a {
   }
 }
 .project__background {
-  grid-column: 6/-1;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 2.8rem;
+  grid-column: 6/-1;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   .project__background {
@@ -768,15 +768,15 @@ a {
   }
 }
 .project__links {
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-  position: relative;
-  margin-bottom: 11.5rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
   gap: 3rem;
-  max-width: 111rem;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 11.5rem;
   margin: 0 auto;
+  max-width: 111rem;
+  position: relative;
 }
 @media (max-width: 480px) {
   .project__links {
@@ -801,26 +801,26 @@ a {
   }
 }
 .project__link-txt-previous {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 4rem;
 }
 @media (max-width: 480px) {
   .project__link-txt-previous {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
     gap: 1.6rem;
   }
 }
 .project__link-txt-next {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 4rem;
 }
 @media (max-width: 480px) {
   .project__link-txt-next {
-    flex-direction: column;
     align-items: flex-end;
+    flex-direction: column;
     gap: 1.6rem;
   }
 }
@@ -873,9 +873,9 @@ a {
 }
 
 .getintouch {
-  margin-top: 3.2rem;
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 3.2rem;
 }
 @media (max-width: 480px) {
   .getintouch {
@@ -921,11 +921,11 @@ a {
   }
 }
 .getintouch__socials {
+  color: black;
   display: flex;
   gap: 1.5rem;
-  color: black;
-  margin-top: 2.4rem;
   margin-bottom: 4.8rem;
+  margin-top: 2.4rem;
 }
 @media (min-width: 669px) and (max-width: 1150px) {
   .getintouch__socials {
@@ -939,8 +939,8 @@ a {
 }
 .getintouch__socials .icon {
   color: black;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 .contactme {
@@ -972,30 +972,31 @@ a {
 }
 .contactme input,
 .contactme textarea {
-  width: 100%;
-  border: none;
   background-color: #e6e6e7;
+  border: none;
   color: #33323d;
   font-size: 1.3rem;
   font-weight: 700;
-  padding-top: 0.9rem;
   padding-bottom: 0.9rem;
   padding-left: 1.6rem;
+  padding-top: 0.9rem;
+  width: 100%;
 }
 .contactme input:focus,
 .contactme textarea:focus {
-  outline: 0;
   border: 1px solid #5fb4a2;
+  outline: 0;
 }
-.contactme ::-moz-placeholder {
+.contactme input::-moz-placeholder, .contactme textarea::-moz-placeholder {
   color: #33323d;
   opacity: 0.4;
 }
-.contactme :-ms-input-placeholder {
+.contactme input:-ms-input-placeholder, .contactme textarea:-ms-input-placeholder {
   color: #33323d;
   opacity: 0.4;
 }
-.contactme ::placeholder {
+.contactme input::placeholder,
+.contactme textarea::placeholder {
   color: #33323d;
   opacity: 0.4;
 }
@@ -1011,8 +1012,8 @@ a {
   border: 1px solid #f43030;
 }
 .contactme .error-message {
-  font-style: italic;
   color: #f43030;
-  font-weight: bold;
   font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
